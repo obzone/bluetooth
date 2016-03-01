@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "27ecfb94-e343-420e-8c6c-b3763b778cc8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "27ecfb94-e343-420e-8c6c-b3763b778cc8" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "27ecfb94-e343-420e-8c6c-b3763b778cc8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F8CDE01C-11C8-407F-991F-1356E3D7AE06",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "27ecfb94-e343-420e-8c6c-b3763b778cc8" : "bluetooth4control\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "controlSide",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "controlSide.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/bluetooth4control",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "27ecfb94-e343-420e-8c6c-b3763b778cc8"
+    }
+  ]
+}

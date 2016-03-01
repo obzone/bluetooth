@@ -1,0 +1,22 @@
+//
+//  Common.pch
+//  BDMDemo
+//
+//  Created by 邵业程 on 15/12/28.
+//  Copyright © 2015年 邵业程. All rights reserved.
+//
+
+#ifndef Common_pch
+#define Common_pch
+
+// functions
+#define oz_return(var) if(!var)return
+#define NSDebug(format, ...) NSLog (@"%s",__func__); NSLog (format, ## __VA_ARGS__)
+
+// varibles
+//
+#define MAIN_PERIPHERAL_SERVICE         @"0F17BE52-3BFF-4F49-9881-2EF2D2B3AB7B"
+#define TAKEPICTURE_CHARACTERISTIC      @"9E42A6EF-A07D-424D-8C05-45891CDE185B"
+#define PHOTO_WRITERABLE_CHARACTERISTIC @"3FE3353D-95D3-49EB-956C-BC42A6002687"
+
+#endif /* Common_pch */

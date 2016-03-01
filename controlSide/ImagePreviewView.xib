@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImagePreviewViewController">
+            <connections>
+                <outlet property="mainImageView" destination="xb7-Sw-DWc" id="amD-05-0ZR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="llM-E2-VDY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xb7-Sw-DWc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                </imageView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWD-Pk-FF1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="hbi-go-VZc"/>
+                    </constraints>
+                    <items>
+                        <navigationItem id="Klc-JA-7cF">
+                            <barButtonItem key="leftBarButtonItem" tag="2000" title="返回" id="wU1-Lj-Nyq">
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="-1" id="I4l-sZ-tAw"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ru2-sC-lGQ">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="boe-k5-vjO"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="pPg-IP-ZNj"/>
+                        <barButtonItem image="share" id="vMK-aH-2dK"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="1ko-nO-fvQ"/>
+                        <barButtonItem tag="2001" image="save" id="WA5-fH-h6d">
+                            <connections>
+                                <action selector="buttonOnClick:" destination="-1" id="fUe-Y5-kWr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="9Us-kx-kQp"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qWD-Pk-FF1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BKz-Cm-Psy"/>
+                <constraint firstItem="xb7-Sw-DWc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QhV-9O-Nga"/>
+                <constraint firstItem="Ru2-sC-lGQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qid-Wf-Gbr"/>
+                <constraint firstItem="qWD-Pk-FF1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TeQ-NZ-6bz"/>
+                <constraint firstAttribute="bottom" secondItem="Ru2-sC-lGQ" secondAttribute="bottom" id="TfV-hk-ir9"/>
+                <constraint firstAttribute="trailing" secondItem="qWD-Pk-FF1" secondAttribute="trailing" id="Xki-0t-cs8"/>
+                <constraint firstItem="xb7-Sw-DWc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YRc-bC-Sk2"/>
+                <constraint firstItem="Ru2-sC-lGQ" firstAttribute="top" secondItem="xb7-Sw-DWc" secondAttribute="bottom" id="bcN-gZ-C0O"/>
+                <constraint firstAttribute="trailing" secondItem="Ru2-sC-lGQ" secondAttribute="trailing" id="mHc-bk-9K4"/>
+                <constraint firstAttribute="trailing" secondItem="xb7-Sw-DWc" secondAttribute="trailing" id="tPd-34-gWK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-171" y="-1088"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="save" width="16" height="16"/>
+        <image name="share" width="16" height="16"/>
+    </resources>
+</document>
